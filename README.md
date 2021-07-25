@@ -43,7 +43,7 @@ End points
 
 Create
 ```
-// create new event
+// create event
 POST api/events
 
 sample payload
@@ -79,7 +79,7 @@ validation
 
 Update
 ```
-// return details of a single event
+// update an event
 PUT api/events/{eventId}
 
 sample payload
@@ -104,7 +104,7 @@ validation
 
 Delete
 ```
-// return details of a single event
+// delete an event
 DELETE api/events/{eventId}
 
 validation
