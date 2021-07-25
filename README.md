@@ -1,12 +1,12 @@
-This repo demonstrates how to test APIs in Laravel using PHPUnit. To see an in depth explanation and how to set it up on your own, [check out the full tutorial here](2020-12-18-testing-laravel-apis-with-phpunit).
+This repo demonstrates how to use and test APIs in Laravel.
 
 ## Setting Up
 
 Clone the repo and install dependencies:
 
 ```bash
-git clone git@github.com:auth0-blog/laravel-testing.git
-cd laravel-testing
+git clone https://github.com/cmdesiderio/Events.gitt
+cd events
 composer install
 ```
 
@@ -38,4 +38,28 @@ Start your application"
 php artisan serve
 ```
 
-For troubleshooting, please [see the full tutorial](https://auth0.com/blog/testing-laravel-apis-with-phpunit/#Set-Up-the-Demo-Project).
+End points
+----------
+
+Create
+```
+// create new event
+POST api/events
+
+sample payload
+{
+    "eventName": "event 1",
+    "frequency": "Once-Off",
+    "startDateTime": "2020-12-01 00:00",
+    "endDateTime": "2020-12-15 00:00",
+    "duration": 30, 
+    "invitees": [1,2,3]
+}
+
+validation
+- eventName, frequency, startDate are mandatory fields
+- startDateTime and endDateTime must not be equal and have the correct format
+- frequency accepted value : Once-off, Weekly or Monthly
+- endDateTime must be empty for Once-off frequency
+- event instance must not overlap for weekly and monthly frequency
+```
