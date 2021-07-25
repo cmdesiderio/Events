@@ -70,7 +70,7 @@ validation
 - startDateTime and endDateTime must not be equal and have the correct format
 - frequency accepted value : Once-off, Weekly or Monthly
 - endDateTime must be empty for Once-off frequency
-- event instance must not overlap for weekly and monthly frequency
+- duration value for weekly and monthly events should not cause two event instance to overlap
 - invitees must have unique user ids
 ```
 
@@ -104,9 +104,9 @@ sample payload
 validation
 - eventName, frequency, startDate are mandatory fields
 - startDateTime and endDateTime must not be equal and have the correct format
-- frequency accepted value : Once-off, Weekly or Monthly
+- accepted frequency value : Once-off, Weekly or Monthly
 - endDateTime must be empty for Once-off frequency
-- event instance must not overlap for weekly and monthly frequency
+- duration value for weekly and monthly events should not cause two event instance to overlap
 - invitees must have unique user ids
 ```
 
