@@ -14,14 +14,15 @@ Set up `.env` file:
 cp .env.example .env
 ```
 
-Create the database for your application and swap `YOUR_DATABASE_NAME`, `YOUR_DATABASE_USERNAME`, and `YOUR_DATABASE_PASSWORD` with the appropriate values for your database:
+Create the database for your application and swap `MY_DB_HOST`, `MY_DB_NAME`, `MY_DB_USERNAME`, and `MY_DB_PASSWORD` with the appropriate values for your database:
 
 ```
 DB_CONNECTION=mysql
+DB_HOST=MY_DB_HOST
 DB_PORT=3306
-DB_DATABASE=YOUR_DATABASE_NAME
-DB_USERNAME=YOUR_DATABASE_USERNAME
-DB_PASSWORD=YOUR_DATABASE_PASSWORD
+DB_DATABASE=MY_DB_NAME
+DB_USERNAME=MY_DB_USERNAME
+DB_PASSWORD=MY_DB_PASSWORD
 ```
 
 Seed your database:
