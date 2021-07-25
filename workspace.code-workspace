@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "app\\Http\\Controllers"
+		},
+		{
+			"path": "app\\Models"
+		},
+		{
+			"path": "database\\migrations"
+		},
+		{
+			"path": "routes"
+		},
+		{
+			"path": "app\\Services"
+		},
+		{
+			"path": "app\\Helpers"
+		},
+		{
+			"path": "app\\Observers"
+		},
+		{
+			"path": "app\\Validations"
+		},
+		{
+			"path": "tests"
+		},
+		{
+			"path": "database"
+		}
+	]
+}
