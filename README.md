@@ -83,7 +83,7 @@ GET api/events/{eventId}
 GET api/events??from=2020-12-01 00:00&to=2020-12-31 00:00&invitees=1,2,3
 
 validation
-- dfilter for dateTime range is required
+- filter for dateTime range is required
 ```
 
 Update
@@ -108,7 +108,6 @@ validation
 - endDateTime must be empty for Once-off frequency
 - event instance must not overlap for weekly and monthly frequency
 - invitees must have unique user ids
-- check if event exist
 ```
 
 Delete
@@ -116,6 +115,4 @@ Delete
 // delete an event
 DELETE api/events/{eventId}
 
-validation
-- check if event exist
 ```
