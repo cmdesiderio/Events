@@ -49,7 +49,7 @@ POST api/events
 sample payload
 {
     "eventName": "event 1",
-    "frequency": "Once-Off",
+    "frequency": "Weekly",
     "startDateTime": "2020-12-01 00:00",
     "endDateTime": "2020-12-15 00:00",
     "duration": 30, 
@@ -62,4 +62,51 @@ validation
 - frequency accepted value : Once-off, Weekly or Monthly
 - endDateTime must be empty for Once-off frequency
 - event instance must not overlap for weekly and monthly frequency
+- invitees must have unique user ids
+```
+
+Read
+```
+// return details of a single event
+GET api/events/{eventId}
+
+// return all event instance for a given dateTime range and/or invitees
+GET api/events??from=2020-12-01 00:00&to=2020-12-31 00:00&invitees=1,2,3
+
+validation
+- dfilter for dateTime range is required
+```
+
+Update
+```
+// return details of a single event
+PUT api/events/{eventId}
+
+sample payload
+{
+    "eventName": "event 1",
+    "frequency": "Monthly",
+    "startDateTime": "2020-01-01 00:00",
+    "endDateTime": "2020-12-31 00:00",
+    "duration": 30, 
+    "invitees": [1,2,3]
+}
+
+validation
+- eventName, frequency, startDate are mandatory fields
+- startDateTime and endDateTime must not be equal and have the correct format
+- frequency accepted value : Once-off, Weekly or Monthly
+- endDateTime must be empty for Once-off frequency
+- event instance must not overlap for weekly and monthly frequency
+- invitees must have unique user ids
+- check if event exist
+```
+
+Delete
+```
+// return details of a single event
+DELETE api/events/{eventId}
+
+validation
+- check if event exist
 ```
