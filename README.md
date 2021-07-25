@@ -1,5 +1,3 @@
-This repo demonstrates how to use and test APIs in Laravel.
-
 ## Setting Up
 
 Clone the repo and install dependencies:
