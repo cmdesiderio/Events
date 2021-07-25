@@ -3,7 +3,7 @@
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/cmdesiderio/Events.gitt
+git clone https://github.com/cmdesiderio/Events.git
 cd events
 composer install
 ```
