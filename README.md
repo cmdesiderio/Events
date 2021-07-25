@@ -32,10 +32,20 @@ Seed your database:
 php artisan migrate --seed
 ```
 
-Start your application"
+Start your application:
 
 ```bash
 php artisan serve
+```
+
+Run test:
+
+```bash
+php artisan test
+```
+or
+```bash
+vendor/bin/phpunit
 ```
 
 End points
